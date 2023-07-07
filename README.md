@@ -13,39 +13,21 @@ This is a Python project that provides a `ClientDiscord` class for interacting w
 1. ```shell
    pip install user-discord
    ```
-2. Install the required libraries by running the following command:
-   ```
-   pip install requests websocket-client
-   ```
 
 ## Usage
 
-1. Import the necessary classes and modules:
-   ```python
-   import json
-   import time
-   import random
-   import base64
-   import requests
-   import websocket
-   from requests.structures import CaseInsensitiveDict
-   from threading import Thread
-   from user_discord import ClientDiscord
-   from user_discord import SocketDiscord
-   ```
-
-2. Create an instance of the `ClientDiscord` class:
+1. Create an instance of the `ClientDiscord` class:
    ```python
    client = ClientDiscord()
    ```
 
-3. Log in to an account using a token:
+2. Log in to an account using a token:
    ```python
    token = "<YOUR_DISCORD_TOKEN>"
    client.login_token(token)
    ```
 
-4. Use the available methods to interact with the Discord API. Here are some examples:
+3. Use the available methods to interact with the Discord API. Here are some examples:
    - Sending a message to a channel:
      ```python
      channel_id = "<CHANNEL_ID>"
